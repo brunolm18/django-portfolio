@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+{% load static %}
+
+    <header class="row">
+        <div class="col-md-4">
+        <img src="{% static 'portfolio/yo_enlaplaya.jpg' %}" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8">
+            <h1 class="text-dark">I'm<strong> Bruno Lezama Méndez</strong></h1>
+            <h3 class="text-dark">I'm a Python Full Stack Developer </h3>
+            <p class="descripcion">As a Fullstack Python Developer, I excel in both front-end and back-end development, leveraging Python for server-side logic with frameworks such as Django and Flask. My front-end expertise includes crafting responsive and dynamic user interfaces using HTML, CSS, and JavaScript. I am proficient in managing databases with SQL and NoSQL technologies, integrating APIs seamlessly, and following best practices in version control with Git. Additionally, I have experience deploying applications on cloud platforms, ensuring they are robust, scalable, and secure. My comprehensive skill set allows me to deliver high-quality, end-to-end web solutions.</p>
+            <a href="{% static 'portfolio/Bruno_LezamaMéndez_CV.pdf' %}" class="btn btn-primary btn-lg rounded-0 my-3">Download CV</a>
+
+        </div>
+    </header>
+
+
+    <div class="row my-4 textcenter">
+        <h3 class="text-dark titulo">My projects</h3>
+        <p class="text-dark projects">My projects that i realized with my knowledge</p>
+
+        {% for project in projects  %}
+
+       <div class="col p-4">
+        <div class="card cardhome">
+            <div class="card-body">
+                <h2 class="text-dark">{{project.titulo}}</h2>
+                <p class="text-dark">{{project.descripcion}}</p>
+                <img src="{{project.image.url}}" alt="{{project.title}}" class="img-fluid w-50">
+        
+                {% if project.url %}
+                <a href="{{project.url}}" class="text-decoration-none btn btn-primary bg-black">¡Visitalo en GitHub!</a>
+                {% endif %}
+            </div>
+        </div>
+       </div>
+        {% endfor %}    
+    {% endblock content %}
+
+    </div>
+    {% block footer %}
+    <footer class="card-footer"></footer>        
+    {% endblock footer %}

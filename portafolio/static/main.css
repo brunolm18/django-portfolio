@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(#5f431c, #ffdab9);
+}
+
+  .descripcion{
+    font-size: 20px;
+    padding: 2px 4px 3px 2px;
+    margin: 10px 2px;
+    font-weight: bold;
+    color:black;
+    
+  }
+  
+.mibackgroundnavbar{
+    background: linear-gradient(to right, #312412, #ffdab9);
+}
+
+.navblog{
+    font-weight: bold;  
+    color: black;  
+}
+
+.navcv{
+    font-weight: bold;  
+    color: black;  
+}
+.titulo{
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardhome{
+    background: linear-gradient(#ffedd5,#8a7e70);
+    width: 400px;
+
+    
+    
+}
+.projects{
+    
+    font-size: 31px;
+    display: flex;
+    justify-content: center;
+    
+}
+

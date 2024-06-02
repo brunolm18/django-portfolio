@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h2 class="fs-1 text-dark">{{publicacion.title}}</h2>
+<p class="fs-3 text-dark p-0">{{publicacion.descripcion|safe}}</p>
+<img src="{{publicacion.imagen.url}}" alt="{{publicacion.title}}">    
+{% endblock content %}
+
