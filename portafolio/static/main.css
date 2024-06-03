@@ -1,8 +1,24 @@
-body{
-    background: linear-gradient(#5f431c, #ffdab9);
+body {
+    background: linear-gradient(45deg, #f3e5ab, #d4e157, #b3e5fc, #81c784, #fff59d, #ffcc80, #ffab91, #80deea);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    
 }
 
-  .descripcion{
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.descripcion{
     font-size: 20px;
     padding: 2px 4px 3px 2px;
     margin: 10px 2px;
@@ -11,9 +27,13 @@ body{
     
   }
   
+
+
 .mibackgroundnavbar{
-    background: linear-gradient(to right, #312412, #ffdab9);
-}
+    background: linear-gradient(45deg, #f3e5ab, #d4e157, #b3e5fc, #81c784, #fff59d, #ffcc80, #ffab91, #80deea);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+ }
 
 .navblog{
     font-weight: bold;  
@@ -31,17 +51,38 @@ body{
 }
 
 .cardhome{
-    background: linear-gradient(#ffedd5,#8a7e70);
-    width: 400px;
+    background: linear-gradient(45deg, #f3e5ab, #d4e157, #b3e5fc, #81c784, #fff59d, #ffcc80, #ffab91, #80deea);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    width: 450px;
 
     
     
 }
+
 .projects{
     
-    font-size: 31px;
+    font-size: 41px;
     display: flex;
     justify-content: center;
+    color: black;
     
 }
 
+.titulo-blog{
+    display: flex;
+    justify-content: left;
+    
+}
+
+.descripcion-blog{
+    font-size: 18px;
+    color:black;
+    text-align: start;
+}
+
+.color-card{
+    background: linear-gradient(45deg, #f3e5ab, #d4e157, #b3e5fc, #81c784, #fff59d, #ffcc80, #ffab91, #80deea);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
