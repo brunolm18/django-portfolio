@@ -82,7 +82,7 @@ if not DEBUG:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'RENDER' in os.environ:
-    STATICFILES_STORAGE = 'render.staticfiles.storage.StaticFilesStorage'
-    MEDIA_STORAGE = 'render.staticfiles.storage.StaticFilesStorage'
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    MEDIA_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
